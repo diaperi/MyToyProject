@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="/css/common/signUp.css">
+</head>
+<body>
+    <main>
+        <div class="loginBackArea">
+            <a href="">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+        <div class="loginLogoArea">
+            <a href="" class="loginLogoAreaLink">
+                <span>🌏LOGO🌏</span>
+            </a>
+        </div>
+        <div class="loginContainer">
+            <form action="">
+                <div class="loginMemberNameInput">
+                    <input type="text" name="" id="loginMemberName" placeholder="이름">
+                </div>
+                <div class="loginMemberIdInput">
+                    <input type="text" name="" id="loginMemberId" placeholder="아이디">
+                    <span id="idMessage">영어/숫자/한글 2~20글자 사이로 입력해주세요.</span>
+                </div>
+                <div class="loginMemberEmailInput">
+                    <input type="text" name="" id="loginMemberEmail" placeholder="이메일">
+                    <button type="button" id="cBtn">인증받기</button>
+                    <span class="signUpMessage" id="emailMessage"> 인증번호를 받을 이메일을 입력해주세요.</span>
+                </div>
+                <div class="loginMemberIdInput">
+                    <input type="text" name="" id="loginMemberId" placeholder="인증번호">
+                    <button type="button" id="McBtn">인증하기</button>
+                    <span class="signUpMessage" id="emailCfMessage">인증번호를 입력해주세요.</span>
+                </div>
+                <div class="loginMemberPwInput">
+                    <input type="text" id="loginMemberPw" placeholder="비밀번호">
+                </div>
+                <div class="loginMemberPwInput">
+                    <input type="text" id="loginMemberPw" placeholder="비밀번호 확인">
+                </div>
+                <div class="loginMemberPwInput">
+                    <input type="text" id="loginMemberPw" placeholder="닉네임">
+                </div>
+                <div class="loginMemberPwInput">
+                    <input type="text" id="loginMemberPw" placeholder="전화번호">
+                </div>
+                <div class="loginBtnArea">
+                    <div class="loginBtnBox">
+                        <button type="submit" class="loginBtn">로그인</button>
+                    </div>
+                </div>
+            </form>
+            <div class="loginForgotArea">
+                <span class="loginForgotLink">비밀번호를 잊어버리셨나요?</span>
+            </div>
+            <div class="loginKakaoArea">
+                <a href="">
+                    <div class="loginKakaoBox">
+                        <span>🌏Kakao 계정으로 로그인</span>
+                    </div>
+                </a>
+            </div>
+            <div class="loginGoogleArea">
+                <a href="">
+                    <div class="loginGoogleBox">
+                        <span>🌏Google 계정으로 로그인</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="loginFindPwPopup">
+            <div class="loginFindPwArea">
+                <div class="loginFindPwClose">
+                    <i class="fa-solid fa-circle-xmark"></i>                
+                </div>
+                <span>회원가입 시 작성한</span>
+                <span>이메일 주소를 입력하세요.</span>
+                <span>임시 비밀번호를</span>
+                <span>해당 이메일 주소로 보내드립니다.</span>
+                <form action="" class="loginFindPwForm">
+                    <input type="text" name="" id="loginFindPw" placeholder="이메일 주소">
+                    <button type="submit" class="loginFindPwBtn">보내기</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
