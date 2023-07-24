@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="/css/common/signUp.css">
+    <script src="https://kit.fontawesome.com/a06d7ad725.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="loginBackArea">
+            <a href="">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+        <div class="loginLogoArea">
+            <a href="" class="loginLogoAreaLink">
+                <span>🌏LOGO🌏</span>
+            </a>
+        </div>
+        <div class="signUpContainer">
+            <form action="">
+                <div class="signUpMemberNameInput">
+                    <input type="text" name="" id="signUpMemberName" placeholder="이름">
+                </div>
+
+                <div class="signUpMemberIdInput">
+                    <div class="signUpMemberIdBox">
+                        <input type="text" name="" id="signUpMemberId" placeholder="아이디">
+                    </div>
+                    <span id="signUpMemberIdMessage">
+                        영어/숫자/한글 2~20글자 사이로 입력해주세요.
+                    </span>
+                </div>
+
+                <div class="signUpMemberEmailInput">
+                    <div class="signUpMemberEmailBox">
+                        <input type="text" name="" id="signUpMemberEmail" placeholder="이메일">
+                        <button type="button" id="signUpMemberEmailBtn">인증받기</button>
+                    </div>
+                    <span class="signUpMemberEmailMessage" id="signUpMemberEmailMessage"> 
+                        인증번호를 받을 이메일을 입력해주세요.
+                    </span>
+                </div>
+
+                <div class="signUpMemberEmailCNumInput">
+                    <div class="signUpMemberEmailBox">
+                        <input type="text" name="" id="signUpMemberEmailCNum" placeholder="인증번호">
+                        <button type="button" id="signUpMemberEmailCNumBtn">인증하기</button>
+                    </div>
+                    <span class="signUpMemberEmailCNumMessage" id="signUpMemberEmailCNumMessage">
+                        인증번호를 입력해주세요.
+                    </span>
+                </div>
+
+                <div class="signUpMemberPwInput">
+                    <div class="signUpMemberEmailBox">
+                        <input type="text" id="signUpMemberPw" placeholder="비밀번호">
+                    </div>
+                    <span class="signUpMemberPwMessage" id="signUpMemberPwMessage">
+                        영어, 숫자, 특수문자(!,@,#,-,_) 6~30글자 사이로 입력해주세요.
+                    </span>
+                </div>
+
+                <div class="signUpMemberPwCheckInput">
+                    <div class="signUpMemberEmailBox">
+                        <input type="text" id="signUpMemberPwCheck" placeholder="비밀번호 확인">
+                    </div>
+                    <span class="signUpMemberPwCheckMessage" id="signUpMemberPwCheckMessage">
+                        비밀번호가 일치하지 않습니다.
+                    </span>
+                </div>
+
+                <div class="signUpMemberPwInput">
+                    <div class="signUpMemberPwInput">
+                        <input type="text" id="signUpMemberNick" placeholder="닉네임">
+                    </div>
+                    <span class="signUpNicknameMessage" id="signUpNicknameMessage">
+                        영어/숫자/한글 2~10글자 사이로입력해주세요.
+                    </span>
+                </div>
+
+                <div class="signUpMemberPwInput">
+                    <div class="signUpMemberEmailBox">
+                        <input type="text" id="signUpMemberTel" placeholder="전화번호">
+                    </div>
+                    <span id="signUpMemberTelMessage">
+                        전화번호를 입력해주세요.(- 제외)
+                    </span>
+                </div>
+
+                <div class="signUpBtnArea">
+                    <div class="signUpBtnBox">
+                        <button type="submit" class="signUpBtn">회원가입</button>
+                    </div>
+                </div>
+
+            </form>
+            <div class="signUpForgotArea">
+                <span class="signUpForgotLink">이용약관</span>
+            </div>
+            <div class="loginKakaoArea">
+                <a href="">
+                    <div class="loginKakaoBox">
+                        <span>🌏Kakao 계정으로 로그인</span>
+                    </div>
+                </a>
+            </div>
+            <div class="loginGoogleArea">
+                <a href="">
+                    <div class="loginGoogleBox">
+                        <span>🌏Google 계정으로 로그인</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="signUpPopup">
+            <div class="signUpPopupArea">
+                <div class="signUpPopupClose">
+                    <i class="fa-solid fa-circle-xmark"></i>                
+                </div>
+                <span>
+                    이용약관
+                </span>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/common/signUp.js"></script>
+</body>
+</html>

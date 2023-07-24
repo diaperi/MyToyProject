@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.loginBackArea{
+    margin-top: 40px;
+    /* background-color: yellowgreen; */
+    width: 90%;
+}
+
+.loginBackArea > a > i{
+    font-size: 30px;
+}
+
+.loginLogoArea{
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.loginLogoAreaLink > span{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginMemberId{
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: black;
+}
+
+#loginMemberId::placeholder{
+    color: rgb(196, 196, 196);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#loginMemberId:focus{
+    outline: none;
+}
+
+#loginMemberPw{
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    color: black;
+}
+
+#loginMemberPw::placeholder{
+    color: rgb(196, 196, 196);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#loginMemberPw:focus{
+    outline: none;
+}
+
+.loginSaveIdLabel{
+    padding-left: 300px;
+}
+
+.loginSaveIdLabel > span{
+    /* background-color: yellowgreen;  */
+    font-size: 15px;
+}
+
+.loginBtnArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.loginBtn{
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgb(0, 150, 150);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.loginForgotArea{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.loginForgotLink{
+    cursor: pointer;
+}
+
+.loginKakaoArea{
+    margin-top: 20px;
+}
+
+.loginKakaoBox{
+    background-color: white;
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginKakaoBox > span{
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.loginGoogleArea{
+    margin-top: 10px;
+}
+
+.loginGoogleBox{
+    background-color: white;
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginGoogleBox > span{
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.loginSignUpArea{
+    margin-top: 20px;
+}
+
+.loginSignUpArea > span{
+    font-size: 15px;
+}
+
+.loginSignUpArea > span:nth-child(2){
+    border-bottom: 1px solid white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* 비밀번호 찾기 팝업 */
+.loginFindPwPopup{
+    width: 600px;
+    height: 500px;
+    background: #ffffff;
+    border-radius: 10px;
+    z-index: 9999;
+    top: 35%;  
+    position: fixed;
+    display: none;
+}
+
+.loginFindPwArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.loginFindPwArea > span{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.loginFindPwForm{
+    display: flex;
+    flex-direction: column;
+}
+
+#loginFindPw{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 80px;
+    height: 50px;
+    width: 350px;
+    color: black;
+    font-size: 20px;
+}
+
+#loginFindPw:focus{
+    outline: none;
+}
+
+#loginFindPw::placeholder{
+    color: rgb(196, 196, 196);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.loginFindPwBtn{
+    margin-top: 20px;
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgb(0, 150, 150);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.loginFindPwClose > i{
+    color: rgb(153, 153, 153);
+    font-size: 50px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+}
+
+.loginFindPwClose > i:hover{
+    color: rgb(87, 87, 87);
+}

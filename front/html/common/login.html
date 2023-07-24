@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="/css/common/login.css">
+    <script src="https://kit.fontawesome.com/a06d7ad725.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="loginBackArea">
+            <a href="">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+        <div class="loginLogoArea">
+            <a href="" class="loginLogoAreaLink">
+                <span>🌏LOGO🌏</span>
+            </a>
+        </div>
+        <div class="loginContainer">
+            <form action="">
+                <div class="loginMemberIdInput">
+                    <input type="text" name="" id="loginMemberId" placeholder="아이디">
+                </div>
+                <div class="loginMemberPwInput">
+                    <input type="text" id="loginMemberPw" placeholder="비밀번호">
+                </div>
+                <div class="loginCheckIdArea">
+                    <div class="loginCheckBox">
+                        <label for="loginSaveId" class="loginSaveIdLabel">
+                            <input type="checkbox" id="loginSaveId">
+                            <span>아이디 저장</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="loginBtnArea">
+                    <div class="loginBtnBox">
+                        <button type="submit" class="loginBtn">로그인</button>
+                    </div>
+                </div>
+            </form>
+            <div class="loginForgotArea">
+                <span class="loginForgotLink">비밀번호를 잊어버리셨나요?</span>
+            </div>
+            <div class="loginKakaoArea">
+                <a href="">
+                    <div class="loginKakaoBox">
+                        <span>🌏Kakao 계정으로 로그인</span>
+                    </div>
+                </a>
+            </div>
+            <div class="loginGoogleArea">
+                <a href="">
+                    <div class="loginGoogleBox">
+                        <span>🌏Google 계정으로 로그인</span>
+                    </div>
+                </a>
+            </div>
+            <div class="loginSignUpArea">
+                <span>LOGO가 처음이라면?</span>
+                <span>가입하세요!</span>
+            </div>
+        </div>
+        <div class="loginFindPwPopup">
+            <div class="loginFindPwArea">
+                <div class="loginFindPwClose">
+                    <i class="fa-solid fa-circle-xmark"></i>                
+                </div>
+                <span>회원가입 시 작성한</span>
+                <span>이메일 주소를 입력하세요.</span>
+                <span>임시 비밀번호를</span>
+                <span>해당 이메일 주소로 보내드립니다.</span>
+                    <input type="text" name="" id="loginFindPw" placeholder="이메일 주소">
+                    <button type="submit" class="loginFindPwBtn">보내기</button>
+            </div>
+        </div>
+    </main>
+    
+
+<script src="/js/common/login.js"></script>
+</body>
+</html>

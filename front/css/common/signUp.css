@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.loginBackArea{
+    margin-top: 40px;
+    /* background-color: yellowgreen; */
+    width: 90%;
+}
+
+.loginBackArea > a > i{
+    font-size: 30px;
+}
+
+.loginBackArea{
+    margin-top: 40px;
+    /* background-color: yellowgreen; */
+    width: 90%;
+}
+
+.loginBackArea > a > i{
+    font-size: 30px;
+}
+
+.loginLogoArea{
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.loginLogoAreaLink > span{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+
+.signUpContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#signUpMemberName{
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    color: black;
+}
+
+#signUpMemberName::placeholder{
+    color: rgb(196, 196, 196);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#signUpMemberName:focus{
+    outline: none;
+}
+
+#signUpMemberId{
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    color: black;
+}
+
+#signUpMemberId::placeholder{
+    color: rgb(196, 196, 196);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#signUpMemberId:focus{
+    outline: none;
+}
+
+#signUpMemberIdMessage{
+    font-size: 15px;
+}
+
+#signUpMemberEmail{
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-left: 10px;
+    color: black;
+}
+
+#signUpMemberEmail::placeholder{
+    color: rgb(196, 196, 196);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#signUpMemberEmail:focus{
+    outline: none;
+}
+
+#signUpMemberEmailBtn{
+    border: none;
+    width: 60px;
+    background-color: black;
+    font-size: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    margin-left: 5px;
+}
+
+#signUpMemberEmailCNum{
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-left: 10px;
+    color: black;
+}
+
+#signUpMemberEmailCNum::placeholder{
+    color: rgb(196, 196, 196);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#signUpMemberEmailCNumBtn{
+    border: none;
+    width: 60px;
+    background-color: black;
+    font-size: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    margin-left: 5px;
+}
+
+#signUpMemberEmailCNum:focus{
+    outline: none;
+}
+
+.signUpMemberEmailCNumMessage{
+    font-size: 15px;
+}
+
+#signUpMemberPw{
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-left: 10px;
+    color: black;
+}
+
+#signUpMemberPw::placeholder{
+    color: rgb(196, 196, 196);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#signUpMemberPw:focus{
+    outline: none;
+}
+
+.signUpMemberPwMessage{
+    font-size: 15px;
+}
+
+#signUpMemberPwCheck{
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-left: 10px;
+    color: black;
+}
+
+#signUpMemberPwCheck::placeholder{
+    color: rgb(196, 196, 196);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#signUpMemberPwCheck:focus{
+    outline: none;
+}
+
+.signUpMemberPwCheckMessage{
+    font-size: 15px;
+}
+
+#signUpMemberNick{
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    color: black;
+}
+
+#signUpMemberNick::placeholder{
+    color: rgb(196, 196, 196);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#signUpMemberNick:focus{
+    outline: none;
+}
+
+.signUpNicknameMessage{
+    font-size: 15px;
+}
+
+#signUpMemberTel{
+    border: none;
+    height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    color: black;
+}
+
+#signUpMemberTel::placeholder{
+    color: rgb(196, 196, 196);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#signUpMemberTel:focus{
+    outline: none;
+}
+
+.signUpMemberTelMessage{
+    font-size: 15px;
+}
+
+
+.signUpBtnArea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.signUpBtn{
+    border: none;
+    height: 50px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: rgb(0, 150, 150);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.signUpForgotArea{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.signUpForgotLink{
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.loginKakaoArea{
+    margin-top: 20px;
+}
+
+.loginKakaoBox{
+    background-color: white;
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginKakaoBox > span{
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.loginGoogleArea{
+    margin-top: 10px;
+}
+
+.loginGoogleBox{
+    background-color: white;
+    height: 50px;
+    width: 400px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginGoogleBox > span{
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* 비밀번호 찾기 팝업 */
+.signUpPopup{
+    width: 600px;
+    height: 500px;
+    background: #ffffff;
+    border-radius: 10px;
+    z-index: 9999;
+    top: 35%;  
+    position: fixed;
+    /* display: none; */
+}
+
+.signUpPopupArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.signUpPopupArea > span{
+    color: black;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.loginFindPwForm{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.signUpPopupClose > i{
+    color: rgb(153, 153, 153);
+    font-size: 50px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+}
+
+.signUpPopupClose > i:hover{
+    color: rgb(87, 87, 87);
+}
+
