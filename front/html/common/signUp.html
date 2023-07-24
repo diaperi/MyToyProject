@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
     <link rel="stylesheet" href="/css/common/signUp.css">
+    <script src="https://kit.fontawesome.com/a06d7ad725.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
@@ -18,45 +21,86 @@
                 <span>🌏LOGO🌏</span>
             </a>
         </div>
-        <div class="loginContainer">
+        <div class="signUpContainer">
             <form action="">
-                <div class="loginMemberNameInput">
-                    <input type="text" name="" id="loginMemberName" placeholder="이름">
+                <div class="signUpMemberNameInput">
+                    <input type="text" name="" id="signUpMemberName" placeholder="이름">
                 </div>
-                <div class="loginMemberIdInput">
-                    <input type="text" name="" id="loginMemberId" placeholder="아이디">
-                    <span id="idMessage">영어/숫자/한글 2~20글자 사이로 입력해주세요.</span>
+
+                <div class="signUpMemberIdInput">
+                    <div class="signUpMemberIdBox">
+                        <input type="text" name="" id="signUpMemberId" placeholder="아이디">
+                    </div>
+                    <span id="signUpMemberIdMessage">
+                        영어/숫자/한글 2~20글자 사이로 입력해주세요.
+                    </span>
                 </div>
-                <div class="loginMemberEmailInput">
-                    <input type="text" name="" id="loginMemberEmail" placeholder="이메일">
-                    <button type="button" id="cBtn">인증받기</button>
-                    <span class="signUpMessage" id="emailMessage"> 인증번호를 받을 이메일을 입력해주세요.</span>
+
+                <div class="signUpMemberEmailInput">
+                    <div class="signUpMemberEmailBox">
+                        <input type="text" name="" id="signUpMemberEmail" placeholder="이메일">
+                        <button type="button" id="signUpMemberEmailBtn">인증받기</button>
+                    </div>
+                    <span class="signUpMemberEmailMessage" id="signUpMemberEmailMessage"> 
+                        인증번호를 받을 이메일을 입력해주세요.
+                    </span>
                 </div>
-                <div class="loginMemberIdInput">
-                    <input type="text" name="" id="loginMemberId" placeholder="인증번호">
-                    <button type="button" id="McBtn">인증하기</button>
-                    <span class="signUpMessage" id="emailCfMessage">인증번호를 입력해주세요.</span>
+
+                <div class="signUpMemberEmailCNumInput">
+                    <div class="signUpMemberEmailBox">
+                        <input type="text" name="" id="signUpMemberEmailCNum" placeholder="인증번호">
+                        <button type="button" id="signUpMemberEmailCNumBtn">인증하기</button>
+                    </div>
+                    <span class="signUpMemberEmailCNumMessage" id="signUpMemberEmailCNumMessage">
+                        인증번호를 입력해주세요.
+                    </span>
                 </div>
-                <div class="loginMemberPwInput">
-                    <input type="text" id="loginMemberPw" placeholder="비밀번호">
+
+                <div class="signUpMemberPwInput">
+                    <div class="signUpMemberEmailBox">
+                        <input type="text" id="signUpMemberPw" placeholder="비밀번호">
+                    </div>
+                    <span class="signUpMemberPwMessage" id="signUpMemberPwMessage">
+                        영어, 숫자, 특수문자(!,@,#,-,_) 6~30글자 사이로 입력해주세요.
+                    </span>
                 </div>
-                <div class="loginMemberPwInput">
-                    <input type="text" id="loginMemberPw" placeholder="비밀번호 확인">
+
+                <div class="signUpMemberPwCheckInput">
+                    <div class="signUpMemberEmailBox">
+                        <input type="text" id="signUpMemberPwCheck" placeholder="비밀번호 확인">
+                    </div>
+                    <span class="signUpMemberPwCheckMessage" id="signUpMemberPwCheckMessage">
+                        비밀번호가 일치하지 않습니다.
+                    </span>
                 </div>
-                <div class="loginMemberPwInput">
-                    <input type="text" id="loginMemberPw" placeholder="닉네임">
+
+                <div class="signUpMemberPwInput">
+                    <div class="signUpMemberPwInput">
+                        <input type="text" id="signUpMemberNick" placeholder="닉네임">
+                    </div>
+                    <span class="signUpNicknameMessage" id="signUpNicknameMessage">
+                        영어/숫자/한글 2~10글자 사이로입력해주세요.
+                    </span>
                 </div>
-                <div class="loginMemberPwInput">
-                    <input type="text" id="loginMemberPw" placeholder="전화번호">
+
+                <div class="signUpMemberPwInput">
+                    <div class="signUpMemberEmailBox">
+                        <input type="text" id="signUpMemberTel" placeholder="전화번호">
+                    </div>
+                    <span id="signUpMemberTelMessage">
+                        전화번호를 입력해주세요.(- 제외)
+                    </span>
                 </div>
-                <div class="loginBtnArea">
-                    <div class="loginBtnBox">
-                        <button type="submit" class="loginBtn">로그인</button>
+
+                <div class="signUpBtnArea">
+                    <div class="signUpBtnBox">
+                        <button type="submit" class="signUpBtn">회원가입</button>
                     </div>
                 </div>
+
             </form>
-            <div class="loginForgotArea">
-                <span class="loginForgotLink">비밀번호를 잊어버리셨나요?</span>
+            <div class="signUpForgotArea">
+                <span class="signUpForgotLink">이용약관</span>
             </div>
             <div class="loginKakaoArea">
                 <a href="">
@@ -73,21 +117,18 @@
                 </a>
             </div>
         </div>
-        <div class="loginFindPwPopup">
-            <div class="loginFindPwArea">
-                <div class="loginFindPwClose">
+        <div class="signUpPopup">
+            <div class="signUpPopupArea">
+                <div class="signUpPopupClose">
                     <i class="fa-solid fa-circle-xmark"></i>                
                 </div>
-                <span>회원가입 시 작성한</span>
-                <span>이메일 주소를 입력하세요.</span>
-                <span>임시 비밀번호를</span>
-                <span>해당 이메일 주소로 보내드립니다.</span>
-                <form action="" class="loginFindPwForm">
-                    <input type="text" name="" id="loginFindPw" placeholder="이메일 주소">
-                    <button type="submit" class="loginFindPwBtn">보내기</button>
-                </form>
+                <span>
+                    이용약관
+                </span>
             </div>
         </div>
     </main>
+
+    <script src="/js/common/signUp.js"></script>
 </body>
 </html>
