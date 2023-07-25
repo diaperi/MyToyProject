@@ -9,3 +9,94 @@
 body{
     background-color: black;
 }
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.qSearchContainer{
+    /* background-color: yellowgreen; */
+    width: 98%;
+    display: flex;  
+    margin-top: 10px;
+}
+
+.qLogoArea{
+    /* background-color: yellowgreen; */
+    margin-right: 20px;
+}
+
+.qLogoAreaLink > span{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.qSearchArea{
+    position: relative;
+}
+
+.qSearchInput{
+    width: 400px;
+    height: 35px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.555);
+    border-radius: 5px;
+    padding-left: 40px;
+}
+
+.qSearchInput::placeholder{
+    color: rgba(255, 255, 255, 0.692);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.qSearchInput:focus{
+    outline: none;
+    background-color: rgba(53, 53, 53, 0.829);
+}
+
+.qSearchInput:focus::placeholder{
+    color: rgba(255, 255, 255, 0.521);
+}
+
+.qSearchBtn{
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0);
+    border: none;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+}
+
+.qSearchBtn > i{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.692);
+}
+
+.qBackBtn{
+    position: fixed;
+    margin-top: 200px;
+    background-color: rgba(153, 205, 50, 0);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    left: 2%;
+}
+
+.qBackBtn:hover{
+    background-color: rgba(53, 53, 53, 0.829);
+}
+
+.qBackBtn > i{
+    font-size: 25px;
+}
