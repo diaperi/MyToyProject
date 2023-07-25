@@ -9,3 +9,374 @@
 body{
     background-color: black;
 }
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+
+.qSearchContainer{
+    /* background-color: yellowgreen; */
+    width: 98%;
+    display: flex;  
+    margin-top: 10px;
+}
+
+.qLogoArea{
+    /* background-color: yellowgreen; */
+    margin-right: 20px;
+}
+
+.qLogoAreaLink > span{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.qSearchArea{
+    position: relative;
+}
+
+.qSearchInput{
+    width: 400px;
+    height: 35px;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.555);
+    border-radius: 5px;
+    padding-left: 40px;
+}
+
+.qSearchInput::placeholder{
+    color: rgba(255, 255, 255, 0.692);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.qSearchInput:focus{
+    outline: none;
+    background-color: rgba(53, 53, 53, 0.829);
+}
+
+.qSearchInput:focus::placeholder{
+    color: rgba(255, 255, 255, 0.521);
+}
+
+.qSearchBtn{
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0);
+    border: none;
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+}
+
+.qSearchBtn > i{
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.692);
+}
+
+.qBackBtn{
+    position: fixed;
+    margin-top: 200px;
+    background-color: rgba(153, 205, 50, 0);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    left: 2%;
+}
+
+.qBackBtn:hover{
+    background-color: rgba(53, 53, 53, 0.829);
+}
+
+.qBackBtn > i{
+    font-size: 25px;
+}
+
+
+/* 메인 컨테이너 */
+.qMainContainer{
+    background-color: yellowgreen;
+    width: 60%;
+    margin-top: 50px;
+    display: flex;
+    border-radius: 10px;
+}
+
+/* 왼쪽 영역 */
+.qLeftBox{
+    width: 50%;
+    background-color: violet;
+}
+
+.qLeftBox{
+    background-color: teal;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.qLeftBoxArea{
+    background-color: rgb(119, 119, 40);
+    /* height: 100%; */
+    margin-top: 20px;
+}
+
+.qLeftTitle{
+    /* background-color: violet; */
+    margin-bottom: 30px;
+}
+
+.qLeftTitle > span{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.qLeftContent > span{
+    font-size: 17px;
+}
+
+/* 오른쪽 영역 */
+.qRightBox{
+    background-color: rgb(131, 112, 87);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.qRightProfileArea{
+    background-color: slateblue;
+    margin-top: 20px;
+    display: flex;
+}
+
+.qProfileInfo{
+    display: flex;
+    /* background-color: violet; */
+    width: 96%;
+    align-items: center;
+}
+
+
+.qProfileImg > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.qProfileNick > span{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.qMoreBtn{
+    display: flex;
+    align-items: center;
+}
+
+.qMoreBtn > i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* 댓글 영역 */
+.qReplyArea{
+    background-color: rgb(99, 46, 46);
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.qReplyProfileInfo{
+    display: flex;
+    align-items: center;
+    /* background-color: yellowgreen; */
+}
+
+.qReplyProfileImg > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.qReplyProfileNick > span{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.qReplyContent{
+    background-color: tomato;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.qReplyContent > span{
+    font-size: 15px;
+}
+
+.qReplyInfo{
+    display: flex;
+    margin-top: 10px;
+    /* background-color: yellowgreen; */
+    margin-left: 50px;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qReplyDate > span{
+    font-size: 14px;
+}
+
+.qChildReplyBtn > span{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.qReplyHeartNum > span{
+    font-size: 14px;
+}
+
+.qReplyHeartNum > i{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.qReplyMoreBtn > i{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.qParentReplyLi{
+    margin-bottom: 40px;
+}
+
+/* 대댓글 영역 */
+.qChildReplyMoreBtn{
+    /* background-color: turquoise; */
+    display: flex;
+    margin-left: 70px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.qChildReplyMoreBar{
+    margin-right: 10px;
+}
+
+.qChildReplyMoreBar > span{
+    font-size: 14px;
+}
+
+.qChildReplyMoreBar2 > span{
+    font-size: 14px;
+}
+
+.qChildReplyArea{
+    margin-left: 60px;
+    /* background-color: yellowgreen; */
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.qChildReplyLi{
+    margin-bottom: 20px;
+}
+
+
+/* 댓글 작성 영역 */
+.qWriteReplyArea{
+    background-color: thistle;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.qWriteReplyInfo{
+    /* background-color: wheat; */
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qWriteReplyNum > span{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.qWriteReplyInfoNum{
+    display: flex;
+    /* background-color: yellowgreen; */
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qWriteReplyHeartNum > span{
+    font-size: 17px;
+}
+
+.qWriteReplyHeartNum > i{
+    font-size: 17px;
+}
+
+.qWriteReplyScrapNum > span{
+    font-size: 17px;
+}
+
+.qWriteReplyScrapNum > i{
+    font-size: 17px;
+}
+
+.qWriteReplyShareBtn > i{
+    font-size: 17px;
+}
+
+.qWriteReplyBox{
+    background-color: turquoise;
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.qWriteReplyProfileImg > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.qWriteReplyInputBox{
+    background-color: violet;
+    width: 85%;
+    height: 40px;
+}
+
+#qWriteReplyInput{
+    border: none;
+    width: 100%;
+    height: 50px;
+    color: black;
+    resize: none;
+    border-radius: 10px;
+}
+
+#qWriteReplyInput
