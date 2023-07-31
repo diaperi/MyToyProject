@@ -4,27 +4,539 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자유게시판</title>
-    <link rel="stylesheet" href="/css/community/qnaCommunity/freeCommunity.css">
+    <link rel="stylesheet" href="/css/community/freeCommunity/freeCommunity.css">
     <script src="https://kit.fontawesome.com/a06d7ad725.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
-        <div class="qSearchContainer">
-            <div class="qLogoArea">
-                <a href="" class="qLogoAreaLink">
+        <div class="fSearchContainer">
+            <div class="fLogoArea">
+                <a href="" class="fLogoAreaLink">
                     <span>🌏LOGO🌏</span>
                 </a>
             </div>
-            <div class="qSearchArea">
-                <button class="qSearchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <input type="text" placeholder="자유게시판에서 검색" class="qSearchInput">
+            <div class="fSearchArea">  
+                <button class="fSearchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" placeholder="자유게시판에서 검색" class="fSearchInput">
             </div>
         </div>
-        <div class="qBackBtn">
+        <div class="fBackBtn">
             <i class="fa-solid fa-arrow-left"></i>
         </div>
+       
+        
+
+        <div class="fMainContainer">
+            <div class="fLeftBox">
+                <div class="fProfileImg">
+                    <img src="/images/hyoshin.jpg" alt="" class="scrolling-image">
+                </div>
+            </div>
+            <div class="fRightBox">
+                <div class="fProfileNick">
+                    <span>닉네임</span>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="fContentBox">
+                    <span>
+                        내용 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                        iusto eius nobis ad eos provident quas accusamus inventore ut natus nulla voluptates 
+                        odio ducimus molestiae reprehenderit sequi laboriosam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                        iusto eius nobis ad eos provident quas accusamus inventore ut natus nulla voluptates 
+                        odio ducimus molestiae reprehenderit sequi laboriosam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                        iusto eius nobis ad eos provident quas accusamus inventore ut natus nulla voluptates 
+                        odio ducimus molestiae reprehenderit sequi laboriosam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                        iusto eius nobis ad eos provident quas accusamus inventore ut natus nulla voluptates 
+                        odio ducimus molestiae reprehenderit sequi laboriosam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                        iusto eius nobis ad eos provident quas accusamus inventore ut natus nulla voluptates 
+                        odio ducimus molestiae reprehenderit sequi laboriosam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                        iusto eius nobis ad eos provident quas accusamus inventore ut natus nulla voluptates 
+                        odio ducimus molestiae reprehenderit sequi laboriosam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                        iusto eius nobis ad eos provident quas accusamus inventore ut natus nulla voluptates 
+                        odio ducimus molestiae reprehenderit sequi laboriosam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                        iusto eius nobis ad eos provident quas accusamus inventore ut natus nulla voluptates 
+                        odio ducimus molestiae reprehenderit sequi laboriosam.
+                    </span>
+                </div>
+                <div class="fInfoBox">
+                    <div class="fHeartNum">
+                        <span>반응&ThinSpace;</span>
+                        <span>39</span>
+                        <span>개</span>
+                    </div>
+                    <div class="fHeartNumClose">
+                        <span>&times;</span>
+                        <span>반응 닫기</span>
+                    </div>
+                    <div class="fInfoIcon">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <i class="fa-regular fa-bookmark"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="fReplyBox">
+                    <div class="fReplyInfoNum">
+                        <div class="fReplyHeartNum">
+                            <i class="fa-regular fa-comment"></i>                            
+                            <span>3</span>
+                        </div>
+                        <div class="fReplyScrapNum">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <span>2</span>
+                        </div>
+                        <div class="fReplyShareBtn">
+                            <i class="fa-regular fa-heart"></i>
+                            <span>3</span>
+                        </div>
+                    </div>
+                    <div class="fReplyArea">
+                        <div class="fParentReplyArea">
+                            <ul class="fParentReplyUl">
+                                <li class="fParentReplyLi">
+                                    <div class="fParentReplyBox">
+                                        <div class="fReplyProfileInfo">
+                                            <div class="fReplyProfileImg">
+                                                <img src="/images/hyoshin.jpg" alt="">
+                                            </div>
+                                            <div class="fReplyProfileNick">
+                                                <span>랄랄라</span>
+                                            </div>
+                                        </div>
+                                        <div class="fReplyContent">
+                                            <span>
+                                                내용 너무 글자가 작은가? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                                                iusto eius nobis ad eos provident fuas accusamus inventore ut natus nulla voluptates 
+                                                odio ducimus molestiae reprehenderit sefui laboriosam.
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                                                iusto eius nobis ad eos provident fuas accusamus inventore ut natus nulla voluptates 
+                                                odio ducimus molestiae reprehenderit sefui laboriosam.
+                                            </span>
+                                        </div>
+                                        <div class="fReplyInfo">
+                                            <div class="fReplyDate">
+                                                <span>1</span>
+                                                <span>일</span>
+                                            </div>
+                                            <div class="fChildReplyBtn">
+                                                <span>답변</span>
+                                            </div>
+                                            <div class="fReplyHeartNum">
+                                                <i class="fa-regular fa-heart"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="fReplyMoreBtn">
+                                                <i class="fa-solid fa-ellipsis"></i>                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fChildReplyMoreArea">
+                                        <div class="fChildReplyMoreBtn">
+                                            <div class="fChildReplyMoreBar">
+                                                <span>――</span>
+                                            </div>
+                                            <div class="fChildReplyMoreBar2">
+                                                <span>답변 숨기기</span>
+                                            </div>
+                                        </div>
+                                        <div class="fChildReplyArea">
+                                            <ul class="fChildReplyUl">
+                                                <li class="fChildReplyLi">
+                                                    <div class="fReplyProfileInfo">
+                                                        <div class="fReplyProfileImg">
+                                                            <img src="/images/hyoshin.jpg" alt="">
+                                                        </div>
+                                                        <div class="fReplyProfileNick">
+                                                            <span>랄랄라</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fReplyContent">
+                                                        <span>내용~~~</span>
+                                                    </div>
+                                                    <div class="fReplyInfo">
+                                                        <div class="fReplyDate">
+                                                            <span>1</span>
+                                                            <span>일</span>
+                                                        </div>
+                                                        <div class="fChildReplyBtn">
+                                                            <span>답변</span>
+                                                        </div>
+                                                        <div class="fReplyHeartNum">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                            <span>3</span>
+                                                        </div>
+                                                        <div class="fReplyMoreBtn">
+                                                            <i class="fa-solid fa-ellipsis"></i>                            
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="fChildReplyLi">
+                                                    <div class="fReplyProfileInfo">
+                                                        <div class="fReplyProfileImg">
+                                                            <img src="/images/hyoshin.jpg" alt="">
+                                                        </div>
+                                                        <div class="fReplyProfileNick">
+                                                            <span>랄랄라</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fReplyContent">
+                                                        <span>내용~~~</span>
+                                                    </div>
+                                                    <div class="fReplyInfo">
+                                                        <div class="fReplyDate">
+                                                            <span>1</span>
+                                                            <span>일</span>
+                                                        </div>
+                                                        <div class="fChildReplyBtn">
+                                                            <span>답변</span>
+                                                        </div>
+                                                        <div class="fReplyHeartNum">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                            <span>3</span>
+                                                        </div>
+                                                        <div class="fReplyMoreBtn">
+                                                            <i class="fa-solid fa-ellipsis"></i>                            
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="fParentReplyLi">
+                                    <div class="fParentReplyBox">
+                                        <div class="fReplyProfileInfo">
+                                            <div class="fReplyProfileImg">
+                                                <img src="/images/hyoshin.jpg" alt="">
+                                            </div>
+                                            <div class="fReplyProfileNick">
+                                                <span>랄랄라</span>
+                                            </div>
+                                        </div>
+                                        <div class="fReplyContent">
+                                            <span>
+                                                내용 너무 글자가 작은가? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                                                iusto eius nobis ad eos provident fuas accusamus inventore ut natus nulla voluptates 
+                                                odio ducimus molestiae reprehenderit sefui laboriosam.
+                                            </span>
+                                        </div>
+                                        <div class="fReplyInfo">
+                                            <div class="fReplyDate">
+                                                <span>1</span>
+                                                <span>일</span>
+                                            </div>
+                                            <div class="fChildReplyBtn">
+                                                <span>답변</span>
+                                            </div>
+                                            <div class="fReplyHeartNum">
+                                                <i class="fa-regular fa-heart"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="fReplyMoreBtn">
+                                                <i class="fa-solid fa-ellipsis"></i>                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fChildReplyMoreArea">
+                                        <div class="fChildReplyMoreBtn">
+                                            <div class="fChildReplyMoreBar">
+                                                <span>――</span>
+                                            </div>
+                                            <div class="fChildReplyMoreBar2">
+                                                <span>답변</span>
+                                                <span>2</span>
+                                                <span>개 보기</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="fWriteReplyArea">
+                        <div class="fWriteReplyBox">
+                            <div class="fWriteReplyProfileImg">
+                                <img src="/images/hyoshin.jpg" alt="">
+                            </div>
+                            <div class="fWriteReplyInputBox">
+                                <textarea name="" id="fWriteReplyInput" rows="1" oninput="autoResizeTextarea()"
+                                onfocus="autoResizeTextarea()"></textarea>
+                            </div>
+                            <div class="fWriteReplyBtn">
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="fMainContainer">
+            <div class="fLeftBox">
+                <div class="fProfileImg">
+                    <img src="/images/hyoshin.jpg" alt="" class="scrolling-image">
+                </div>
+            </div>
+            <div class="fRightBox">
+                <div class="fProfileNick">
+                    <span>닉네임</span>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+                <div class="fContentBox">
+                    <span>
+                        내용 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                        iusto eius nobis ad eos provident quas accusamus inventore ut natus nulla voluptates 
+                        odio ducimus molestiae reprehenderit sequi laboriosam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                        iusto eius nobis ad eos provident quas accusamus inventore ut natus nulla voluptates 
+                        odio ducimus molestiae reprehenderit sequi laboriosam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                        iusto eius nobis ad eos provident quas accusamus inventore ut natus nulla voluptates 
+                        odio ducimus molestiae reprehenderit sequi laboriosam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                        iusto eius nobis ad eos provident quas accusamus inventore ut natus nulla voluptates 
+                        odio ducimus molestiae reprehenderit sequi laboriosam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                        iusto eius nobis ad eos provident quas accusamus inventore ut natus nulla voluptates 
+                        odio ducimus molestiae reprehenderit sequi laboriosam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                        iusto eius nobis ad eos provident quas accusamus inventore ut natus nulla voluptates 
+                        odio ducimus molestiae reprehenderit sequi laboriosam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                        iusto eius nobis ad eos provident quas accusamus inventore ut natus nulla voluptates 
+                        odio ducimus molestiae reprehenderit sequi laboriosam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                        iusto eius nobis ad eos provident quas accusamus inventore ut natus nulla voluptates 
+                        odio ducimus molestiae reprehenderit sequi laboriosam.
+                    </span>
+                </div>
+                <div class="fInfoBox">
+                    <div class="fHeartNum">
+                        <span>반응&ThinSpace;</span>
+                        <span>39</span>
+                        <span>개</span>
+                    </div>
+                    <div class="fHeartNumClose">
+                        <span>&times;</span>
+                        <span>반응 닫기</span>
+                    </div>
+                    <div class="fInfoIcon">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <i class="fa-regular fa-bookmark"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="fReplyBox">
+                    <div class="fReplyInfoNum">
+                        <div class="fReplyHeartNum">
+                            <i class="fa-regular fa-comment"></i>                            
+                            <span>3</span>
+                        </div>
+                        <div class="fReplyScrapNum">
+                            <i class="fa-regular fa-bookmark"></i>
+                            <span>2</span>
+                        </div>
+                        <div class="fReplyShareBtn">
+                            <i class="fa-regular fa-heart"></i>
+                            <span>3</span>
+                        </div>
+                    </div>
+                    <div class="fReplyArea">
+                        <div class="fParentReplyArea">
+                            <ul class="fParentReplyUl">
+                                <li class="fParentReplyLi">
+                                    <div class="fParentReplyBox">
+                                        <div class="fReplyProfileInfo">
+                                            <div class="fReplyProfileImg">
+                                                <img src="/images/hyoshin.jpg" alt="">
+                                            </div>
+                                            <div class="fReplyProfileNick">
+                                                <span>랄랄라</span>
+                                            </div>
+                                        </div>
+                                        <div class="fReplyContent">
+                                            <span>
+                                                내용 너무 글자가 작은가? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                                                iusto eius nobis ad eos provident fuas accusamus inventore ut natus nulla voluptates 
+                                                odio ducimus molestiae reprehenderit sefui laboriosam.
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                                                iusto eius nobis ad eos provident fuas accusamus inventore ut natus nulla voluptates 
+                                                odio ducimus molestiae reprehenderit sefui laboriosam.
+                                            </span>
+                                        </div>
+                                        <div class="fReplyInfo">
+                                            <div class="fReplyDate">
+                                                <span>1</span>
+                                                <span>일</span>
+                                            </div>
+                                            <div class="fChildReplyBtn">
+                                                <span>답변</span>
+                                            </div>
+                                            <div class="fReplyHeartNum">
+                                                <i class="fa-regular fa-heart"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="fReplyMoreBtn">
+                                                <i class="fa-solid fa-ellipsis"></i>                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fChildReplyMoreArea">
+                                        <div class="fChildReplyMoreBtn">
+                                            <div class="fChildReplyMoreBar">
+                                                <span>――</span>
+                                            </div>
+                                            <div class="fChildReplyMoreBar2">
+                                                <span>답변 숨기기</span>
+                                            </div>
+                                        </div>
+                                        <div class="fChildReplyArea">
+                                            <ul class="fChildReplyUl">
+                                                <li class="fChildReplyLi">
+                                                    <div class="fReplyProfileInfo">
+                                                        <div class="fReplyProfileImg">
+                                                            <img src="/images/hyoshin.jpg" alt="">
+                                                        </div>
+                                                        <div class="fReplyProfileNick">
+                                                            <span>랄랄라</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fReplyContent">
+                                                        <span>내용~~~</span>
+                                                    </div>
+                                                    <div class="fReplyInfo">
+                                                        <div class="fReplyDate">
+                                                            <span>1</span>
+                                                            <span>일</span>
+                                                        </div>
+                                                        <div class="fChildReplyBtn">
+                                                            <span>답변</span>
+                                                        </div>
+                                                        <div class="fReplyHeartNum">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                            <span>3</span>
+                                                        </div>
+                                                        <div class="fReplyMoreBtn">
+                                                            <i class="fa-solid fa-ellipsis"></i>                            
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="fChildReplyLi">
+                                                    <div class="fReplyProfileInfo">
+                                                        <div class="fReplyProfileImg">
+                                                            <img src="/images/hyoshin.jpg" alt="">
+                                                        </div>
+                                                        <div class="fReplyProfileNick">
+                                                            <span>랄랄라</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fReplyContent">
+                                                        <span>내용~~~</span>
+                                                    </div>
+                                                    <div class="fReplyInfo">
+                                                        <div class="fReplyDate">
+                                                            <span>1</span>
+                                                            <span>일</span>
+                                                        </div>
+                                                        <div class="fChildReplyBtn">
+                                                            <span>답변</span>
+                                                        </div>
+                                                        <div class="fReplyHeartNum">
+                                                            <i class="fa-regular fa-heart"></i>
+                                                            <span>3</span>
+                                                        </div>
+                                                        <div class="fReplyMoreBtn">
+                                                            <i class="fa-solid fa-ellipsis"></i>                            
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="fParentReplyLi">
+                                    <div class="fParentReplyBox">
+                                        <div class="fReplyProfileInfo">
+                                            <div class="fReplyProfileImg">
+                                                <img src="/images/hyoshin.jpg" alt="">
+                                            </div>
+                                            <div class="fReplyProfileNick">
+                                                <span>랄랄라</span>
+                                            </div>
+                                        </div>
+                                        <div class="fReplyContent">
+                                            <span>
+                                                내용 너무 글자가 작은가? Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, debitis, 
+                                                iusto eius nobis ad eos provident fuas accusamus inventore ut natus nulla voluptates 
+                                                odio ducimus molestiae reprehenderit sefui laboriosam.
+                                            </span>
+                                        </div>
+                                        <div class="fReplyInfo">
+                                            <div class="fReplyDate">
+                                                <span>1</span>
+                                                <span>일</span>
+                                            </div>
+                                            <div class="fChildReplyBtn">
+                                                <span>답변</span>
+                                            </div>
+                                            <div class="fReplyHeartNum">
+                                                <i class="fa-regular fa-heart"></i>
+                                                <span>3</span>
+                                            </div>
+                                            <div class="fReplyMoreBtn">
+                                                <i class="fa-solid fa-ellipsis"></i>                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fChildReplyMoreArea">
+                                        <div class="fChildReplyMoreBtn">
+                                            <div class="fChildReplyMoreBar">
+                                                <span>――</span>
+                                            </div>
+                                            <div class="fChildReplyMoreBar2">
+                                                <span>답변</span>
+                                                <span>2</span>
+                                                <span>개 보기</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="fWriteReplyArea">
+                        <div class="fWriteReplyBox">
+                            <div class="fWriteReplyProfileImg">
+                                <img src="/images/hyoshin.jpg" alt="">
+                            </div>
+                            <div class="fWriteReplyInputBox">
+                                <textarea name="" id="fWriteReplyInput" rows="1" oninput="autoResizeTextarea()"
+                                onfocus="autoResizeTextarea()"></textarea>
+                            </div>
+                            <div class="fWriteReplyBtn">
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <script src="/js/community/freeCommunity.js"></script>
 </body>
 </html>
